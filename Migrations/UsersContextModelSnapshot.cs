@@ -17,7 +17,7 @@ namespace Pre_Aceleracion_Unidad1_ArielLedesma.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasDefaultSchema("Users")
+                .HasDefaultSchema("PreAceleracion")
                 .HasAnnotation("ProductVersion", "6.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
@@ -47,7 +47,7 @@ namespace Pre_Aceleracion_Unidad1_ArielLedesma.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Comments", "Users");
+                    b.ToTable("Comments", "PreAceleracion");
                 });
 
             modelBuilder.Entity("Pre_Aceleracion_Unidad1_ArielLedesma.Models.Post", b =>
@@ -77,7 +77,7 @@ namespace Pre_Aceleracion_Unidad1_ArielLedesma.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Posts", "Users");
+                    b.ToTable("Posts", "PreAceleracion");
                 });
 
             modelBuilder.Entity("Pre_Aceleracion_Unidad1_ArielLedesma.Models.User", b =>
@@ -99,7 +99,7 @@ namespace Pre_Aceleracion_Unidad1_ArielLedesma.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users", "Users");
+                    b.ToTable("Users", "PreAceleracion");
                 });
 
             modelBuilder.Entity("Pre_Aceleracion_Unidad1_ArielLedesma.Models.Comment", b =>

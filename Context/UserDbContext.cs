@@ -5,7 +5,7 @@ namespace Pre_Aceleracion_Unidad1_ArielLedesma.Context
 {
     public class UsersContext : DbContext
     {
-        private const string Schema = "Users";
+        private const string Schema = "PreAceleracion";
 
         public UsersContext(DbContextOptions<UsersContext> options) : base(options)
         {
